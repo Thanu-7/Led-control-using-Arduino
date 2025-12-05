@@ -1,15 +1,16 @@
-# Led-control-using-Arduino
-
+Name : THANUSHREE VIJAYAKANTH</br>
+Reg No : 212224110054 </br>
+## Ex 1 - Led-control-using-Arduino
 ## AIM
 To design and implement a system for LED control using an Arduino microcontroller and a push button.
 
 ## COMPONENTS REQUIRED
-Arduino </br>
-Led </br>
-Resistance </br>
-Push button </br>
-Bread board </br>
-Jumber wire </br>
+Arduino 
+Led 
+Resistance 
+Push button 
+Bread board 
+Jumber wire 
 
 ## PROCEDURE
 Step 1 Connect all the componets as per the circut diagram </br>
@@ -58,9 +59,41 @@ Emergency Signaling System </br>
 Weighing Machines </br>
 
 ## CIRCUIT DIAGRAM
+<img width="1200" height="798" alt="image" src="https://github.com/user-attachments/assets/08ea5b10-ae04-45f0-ba15-90a2df1d2f03" />
+
 
 ## PROGRAM
+void setup()</br>
+{ </br>
+  pinMode(11,OUTPUT);</br>
+  pinMode(4,INPUT);</br>
 
+  }
+
+void loop() <br>
+{
+ int button_status=digitalRead(4);</br>
+ if(button_status== HIGH){ </br>
+  digitalWrite(11,HIGH); </br>
+  delay(1000); </br>
+   digitalWrite(11,LOW); </br>
+    delay(1000); </br>
+  
+ }
+ else </br>
+ { </br>
+  digitalWrite(11,LOW); </br>
+ } </br>
+} 
+
+}
 ## OUTPUT
+off
+<img width="1507" height="906" alt="image" src="https://github.com/user-attachments/assets/d3b6b160-b00b-4cb9-b0b7-3d7787cf67fe" />
+
+on
+<img width="1746" height="995" alt="image" src="https://github.com/user-attachments/assets/af487703-59b9-4834-87ab-0b4c6017153d" />
+
 
 ## RESULT
+Thus an LED control system using arduino microcontroller and push button is executed.
